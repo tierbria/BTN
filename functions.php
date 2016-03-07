@@ -47,6 +47,13 @@ function _s_setup() {
 		'primary' => esc_html__( 'Primary', '_s' ),
 	) );
 
+	//This registers a secondary menu
+	register_nav_menus(
+		array(
+			'secondary' => __('Footer Menu')
+			,)
+		);
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -91,6 +98,24 @@ function _s_content_width() {
 	$GLOBALS['content_width'] = apply_filters( '_s_content_width', 640 );
 }
 add_action( 'after_setup_theme', '_s_content_width', 0 );
+
+//Sets the excerpt to show 0 words and only the more button
+function excerpt_length($length) {
+	return 0;
+}
+add_filter('excerpt_length', 'excerpt_length', 999);
+
+//This modified the excerpts read more text
+function excerpt_more($more) {
+	return 'Learn More';
+}
+add_filter('excerpt_more', 'excerpt_more');
+
+//This links the read more to the post
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 /**
  * Register widget area.
