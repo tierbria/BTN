@@ -924,3 +924,116 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*------------------------------------------------------------------
+THIS IS THE STUFF I'M ADDING
+------------------------------------------------------------------*/
+
+#page {
+	background-color: #D9D9D9;
+}
+
+/*Stuff for the top menu area */
+#site-navigation {
+	background-color: #000d1a;
+	color: white;
+	height: 75px;
+	padding-left: 1%;
+}
+.site-branding {
+	display: none;
+}
+.main-navigation a {
+	color: white;
+}
+.brand-logo {
+	background-color: white;
+	float: left;
+	height: 60px;
+	margin: 0.5% 0 0.5% 0.5%;
+	width: 10%;
+}
+.main-navigation li {
+	margin: 1.5% 0 1.5% 1%;
+	padding: 0.45em;
+}
+
+/*Stuff for the main section on the home page*/
+#primary {
+	height: 100%;
+	margin: 5% 1% 0 1%;
+	width: 99%;
+}
+.site-main {
+	padding: 0 2% 2% 3%;
+}
+.entry-content {
+	margin-top: 0;
+}
+.entry-content-featured {
+	background-color: white; 
+	border: 1px solid #000d1a;
+	box-shadow: 2px 2px 25px #000d1a;
+		-webkit-box-shadow:10px 10px 50px #000d1a;
+		-moz-box-shadow:10px 10px 50px #000d1a;
+		-o-box-shadow:10px 10px 50px #000d1a;
+		-ms-box-shadow:10px 10px 50px #000d1a;
+	float: left;
+	height: 475px;
+	margin: 0 1% 1% 0;
+	width: 32%;
+}
+.entry-content-featured img {
+	height: 65%;
+}
+.entry-content-wrap {
+	padding: 0 5% 0 5%;
+}
+.entry-content-wrap p {
+	background-color: #000d1a;
+	border: 1px solid black;
+	padding: 2% 2% 2% 3%;
+	width: 45%;
+}
+.entry-content-featured a {
+	color: #00ccff;
+	font-size: 1.25em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a.read-more {
+	color: white;
+}
+/*Stuff for the footer*/
+.site-footer {
+	background-color: #000d1a;
+	color: white;
+	margin-top: 2%;
+	padding: 1% 0 1% 0;
+}
+.foot-menu ul {
+	line-height: 1.5em;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: center;
+	width: 100%;
+}
+.site-info {
+	text-align: center;
+}
+.foot-menu ul li {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	display: inline-block;
+	padding: 0 1% 0 1%;
+}
+.foot-menu a {
+	color: white;
+	text-decoration: none;
+}
+.site-info a {
+	color: white;
+}
+
