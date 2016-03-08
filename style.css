@@ -1095,4 +1095,18 @@ a.read-more {
 	text-decoration: none;
 }
 
-
+/*Stuff for the featured - wide*/
+.promoted-container {
+	border: 1px solid black;
+}
+#promoted img {
+	height: 33em;
+	position: absolute;
+	width: 100%;
+}
+.promoted-title {
+	position: relative;
+}
+.learnmore {
+	position: relative;
+}

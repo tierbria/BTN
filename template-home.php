@@ -7,6 +7,30 @@
 
 get_header(); ?>
 
+			<div id="promoted">
+				<?php
+				query_posts(
+					array(
+						'post_type' => 'promoted',
+						'posts_per_page' => 1));
+				if(have_posts()) : while(have_posts()) : the_post();
+				?>
+
+				<div class="promoted-container">
+					<?php the_post_thumbnail(); ?>
+					<a href="#" class="promoted-title"><?php the_title(); ?> </a>
+					<?php the_excerpt(); ?>
+					<a href="#" class="learnmore">Learn More</a>
+				</div>
+
+				<?php
+					endwhile;
+					endif;
+					wp_reset_query();
+				?>
+			</div>
+
+	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

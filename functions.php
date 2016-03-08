@@ -151,6 +151,38 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+/*
+*This will register a custom post type
+*/
+add_action('init','register_my_post_types');
+function register_my_post_types() {
+	register_post_type('promoted',
+		array(
+			'labels' => array(
+				'name' => ('Promoted Post'),
+				'singular_name' => 'Promoted Post',
+				'add_new' => 'Add New Post',
+				'add_new_item' => 'Add New Post',
+				'edit_item' => 'Edit Post',
+				'new_item' => 'New Post',
+				'all_items' => 'All Posts',
+				'view_items' => 'View Posts',
+				'search_items' => 'Search Posts',
+				'not_found' => 'No Posts found',
+				'not_found_in_trash' => 'No posts found in Trash',
+				'parent_item_colon' => '',
+				),
+			'public' => true,
+			'exclude_from_search' => true,
+			'supports' => array(
+				'title',
+				'thumbnail',
+				'editor'
+				)
+			)
+		);
+}
+
 /**
  * Implement the Custom Header feature.
  */
