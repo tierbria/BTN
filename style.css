@@ -947,6 +947,7 @@ THIS IS THE STUFF I'M ADDING
 .main-navigation a {
 	color: white;
 	font-size: 1em;
+	position: static;
 }
 .brand-logo {
 	background-color: white;
@@ -981,7 +982,7 @@ THIS IS THE STUFF I'M ADDING
 		-o-box-shadow:2px 2px 25px #000d1a;
 		-ms-box-shadow:2px 2px 25px #000d1a;
 	float: left;
-	height: 425px;
+	height: 525px;
 	margin: 0 1% 1% 0;
 	width: 32%;
 }
@@ -1000,14 +1001,11 @@ THIS IS THE STUFF I'M ADDING
 	padding: 0 5% 0 5%;
 }
 .entry-content-wrap p {
-	background-color: #000d1a;
-	border: 1px solid black;
+	background-color: #fafafa;
+	font-size: 0.875em;
+	margin-top: 0;
 	padding: 2% 2% 2% 3%;
-	width: 45%;
-}
-.entry-content-wrap p:hover {
-	background-color: #00ccff;
-	color: #D9D9D9;
+	width: 99%;
 }
 .entry-content-featured a {
 	color: #00ccff;
@@ -1016,8 +1014,18 @@ THIS IS THE STUFF I'M ADDING
 	text-transform: uppercase;
 }
 a.read-more {
-	color: white;
+	background-color: #000d1a;
+	border: 1px solid #000d1a;
+	color: #fafafa;
 	font-size: 1.25em;
+	padding: 2% 1.5% 2% 1.5%;
+	position: relative;
+	top: 40px;
+	right: 165px;
+}
+a.read-more:hover {
+	background-color: #00ccff;
+	color: white;	
 }
 /*Stuff for the footer*/
 .site-footer {
@@ -1327,7 +1335,7 @@ ul.flexslider {
 }
 .slide-txt {
 	bottom: 25em;
-	background-color: white;
+	background-color: #fafafa;
 	opacity: 0.7;
 	height: 30%;
 	margin: 0 0 0 50%;
@@ -1353,11 +1361,11 @@ a.promoted-title {
 }
 .learnmore:hover {
 	background-color: #00ccff; 
-	color: white;
+	color: #fafafa;
 	opacity:1;
 }
 a.learnmore {
-	color: white;
+	color: #fafafa;
 	text-decoration: none; 
 }
 
@@ -1375,17 +1383,20 @@ a.learnmore {
 }
 
 ul.sub-menu {
-	border: 1px solid black;
+	border: 1px solid #000d1a;
 	display: block;
 	float: left;
 	opacity: 0.9;
 	width: auto;
 }
 .main-navigation ul ul a {
-	color: black;
+	color: #000d1a;
 	font-size: 1em;
 }
 .main-navigation ul ul a:hover {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #000d1a;
 	font-weight: bold;
+}
+h2.entry-title {
+	margin-bottom: 0;
 }
