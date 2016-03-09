@@ -956,8 +956,8 @@ THIS IS THE STUFF I'M ADDING
 	width: 10%;
 }
 .main-navigation li {
-	margin: 1.5% 0 1.5% 2%;
-	padding: 0.45em;
+	margin: 1.5% 0 0 2%;
+	padding: 0.45em 0.45em 1.45em 0.45em;
 }
 
 /*Stuff for the main section on the home page*/
@@ -1359,4 +1359,33 @@ a.promoted-title {
 a.learnmore {
 	color: white;
 	text-decoration: none; 
+}
+
+/* Drop down menus */
+.main-navigation ul ul {
+	background-color: #fafafa;
+	padding-top: 1em;
+	position: absolute;
+	top: 3.5em;
+}
+
+.main-navigation ul ul li {
+	padding-top: 0.3em;
+	padding-bottom:0.3em;
+}
+
+ul.sub-menu {
+	border: 1px solid black;
+	display: block;
+	float: left;
+	opacity: 0.9;
+	width: auto;
+}
+.main-navigation ul ul a {
+	color: black;
+	font-size: 1em;
+}
+.main-navigation ul ul a:hover {
+	border-bottom: 1px solid black;
+	font-weight: bold;
 }
