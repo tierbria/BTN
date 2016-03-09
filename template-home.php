@@ -31,7 +31,7 @@ get_header(); ?>
 					      		<?php the_post_thumbnail(); ?>
 					      	</div>
 					      	<div class="slide-txt">
-					      		<a href="#" class="promoted-title"><?php the_title(); ?> </a>
+					      		<a href="<?php the_permalink(); ?>" class="promoted-title"><?php the_title(); ?> </a>
 								<a href="<?php the_permalink(); ?>" class="learnmore">Find Out More</a>
 					      	</div>
 					    </li>
