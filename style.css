@@ -1398,5 +1398,6 @@ ul.sub-menu {
 	font-weight: bold;
 }
 h2.entry-title {
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
