@@ -145,6 +145,18 @@ function _s_scripts() {
 
 	wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_enqueue_script('flexslider', get_stylesheet_directory_uri() .'/js/jquery.flexslider-min.js',
+		 array(
+		 	'jquery'), 
+		 	'2.0.4',
+		 	true);
+
+	wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() . '/js/scripts.js',
+		array(
+			'jquery'),
+			'1.0.0',
+			true);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -156,20 +168,20 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
 */
 add_action('init','register_my_post_types');
 function register_my_post_types() {
-	register_post_type('promoted',
+	register_post_type('slides',
 		array(
 			'labels' => array(
-				'name' => ('Promoted Post'),
-				'singular_name' => 'Promoted Post',
-				'add_new' => 'Add New Post',
+				'name' => ('Slides'),
+				'singular_name' => 'Promoted Slide',
+				'add_new' => 'Add New Slide',
 				'add_new_item' => 'Add New Post',
-				'edit_item' => 'Edit Post',
-				'new_item' => 'New Post',
-				'all_items' => 'All Posts',
-				'view_items' => 'View Posts',
-				'search_items' => 'Search Posts',
-				'not_found' => 'No Posts found',
-				'not_found_in_trash' => 'No posts found in Trash',
+				'edit_item' => 'Edit Slide',
+				'new_item' => 'New Slide',
+				'all_items' => 'All Slides',
+				'view_items' => 'View Slides',
+				'search_items' => 'Search Slides',
+				'not_found' => 'No Slides found',
+				'not_found_in_trash' => 'No Slides found in Trash',
 				'parent_item_colon' => '',
 				),
 			'public' => true,

@@ -7,28 +7,41 @@
 
 get_header(); ?>
 
-			<div id="promoted">
-				<?php
-				query_posts(
-					array(
-						'post_type' => 'promoted',
-						'posts_per_page' => 1));
-				if(have_posts()) : while(have_posts()) : the_post();
-				?>
+		<div class="flexslider">
 
-				<div class="promoted-container">
-					<?php the_post_thumbnail(); ?>
-					<a href="#" class="promoted-title"><?php the_title(); ?> </a>
-					<?php the_excerpt(); ?>
-					<a href="#" class="learnmore">Learn More</a>
-				</div>
+			<?php
 
-				<?php
-					endwhile;
-					endif;
-					wp_reset_query();
-				?>
-			</div>
+			query_posts(
+				array(
+					'post_type' => 'slides',
+					'posts_per_page' => 4,
+					'byorder' => 'rand'));
+
+			?>
+
+			<?php
+
+			if(have_posts()) : while(have_posts()) : the_post();
+
+			?>
+
+					<ul class="slides">
+					    <li>
+					    	<div class="slide-thumbnail">
+					      		<?php the_post_thumbnail(); ?>
+					      	</div>
+					      	<div class="slide-txt">
+					      		<a href="#" class="promoted-title"><?php the_title(); ?> </a>
+								<a href="<?php the_permalink(); ?>" class="learnmore">Find Out More</a>
+					      	</div>
+					    </li>
+					</ul>
+
+			<?php
+				endwhile;
+				endif;
+			?>
+		</div>
 
 	
 	<div id="primary" class="content-area">
@@ -41,6 +54,7 @@ get_header(); ?>
 			$args = array (
 				'cat' => 4,
 				'posts_per_page' => 6, 
+				'byorder' => 'ASC'
 			);
 			query_posts($args)
 		?>
