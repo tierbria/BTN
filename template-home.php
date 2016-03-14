@@ -14,7 +14,7 @@ get_header(); ?>
 			query_posts(
 				array(
 					'post_type' => 'slides',
-					'posts_per_page' => 'promoted',
+					'posts_per_page' => '4',
 					'byorder' => 'rand'));
 
 			?>
@@ -52,7 +52,7 @@ get_header(); ?>
 		<?php
 			//This code sets the category and number of posts to display on the page.
 			$args = array (
-				'cat' => 4,
+				'cat' => 'promoted',
 				'posts_per_page' => 6, 
 				'byorder' => 'ASC'
 			);
