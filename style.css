@@ -635,7 +635,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 779px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -1034,26 +1034,24 @@ a.read-more:hover {
 	margin-top: 2%;
 	padding: 1% 0 1% 0;
 }
-.foot-menu ul {
-	line-height: 1.5em;
-	list-style: none;
-	margin: 0;
-	padding: 0 0 5px 0;
-	text-align: center;
-	width: 100%;
-}
 .site-info {
 	text-align: center;
 }
-.foot-menu ul li {
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+#footer-menu ul {
+	list-style-type: none;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	text-align: center;
+}
+#footer-menu ul li {
 	display: inline-block;
-	padding: 0 1% 0 1%;
 }
 .foot-menu a {
+	border-right: 2px solid #fafafa;
 	color: white;
 	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0 0.5em 0 0.5em;
 	text-decoration: none;
 }
 .site-info a {
@@ -1753,6 +1751,77 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 92%;
+		margin-top: 2%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+		width: 100%;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1764,7 +1833,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -1815,6 +1886,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 92%;
+		margin-top: 2%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1826,7 +1967,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -1879,6 +2022,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 92%;
+		margin-top: 2.5%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1890,7 +2103,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -1943,6 +2158,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 91%;
+		margin-top: 2.5%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1954,7 +2239,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -2007,6 +2294,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 91%;
+		margin-top: 2.5%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2018,7 +2375,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -2071,6 +2430,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 89%;
+		margin-top: 3%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2082,7 +2511,9 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
@@ -2141,6 +2572,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 89%;
+		margin-top: 3%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2153,11 +2654,13 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
-	.entry-content-about img {
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
-@media only screen and (max-width: 449px) {
+@media only screen and (min-width: 380px) and (max-width: 449px) {
 	#site-navigation {
 		height: 70px;
 	}
@@ -2216,6 +2719,76 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 86%;
+		margin-top: 4%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2228,7 +2801,156 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
+		transition:all .1s linear;
+	}
+}
+@media only screen and (max-width: 379px) {
+	#site-navigation {
+		height: 70px;
+	}
+	.flexslider {
+		display: none;
+	}
+	a.learnmore {
+		font-size: 1.9em;
+	}
+	a.promoted-title {
+		font-size: 2.5em;
+		position: relative;
+		left: 12%;
+	}
+	a.promoted-title:hover {
+		text-decoration: underline;
+	}
+	.slide-txt {
+		margin: 25% 0 0 25%;
+		text-align: center;
+		width: 50%;
+	}
+	.entry-content-featured {
+		height: auto;
+		width: 98%;
+	}
+	.entry-content-featured a {
+		font-size: 1em;
+	}
+	.entry-content-wrap p {
+		font-size: 0.8em;
+		margin-bottom: 8%;
+		padding: 0% 2% 2% 1%;
+	}
+	a.read-more {
+		background: transparent;
+		border: none;
+		color: #00ccff;
+		position: initial;
+		text-transform: none;
+	}
+	a.read-more:hover {
+		background: transparent;
+		color: #00ccff;
+		text-decoration: underline;
+	}
+	h2.entry-title {
+		margin-right: 27%;
+	}
+	.entry-content-about a {
+		font-size: 1.25em;
+	}
+	.entry-content-about p {
+		font-size: 0.8em;
+	}
 	.entry-content-about img {
+		display: none;
+	}
+	.menu-toggle {
+		background-color: transparent;
+		color: white;
+		height: 3.5em;
+		margin-left: 86%;
+		margin-top: 4%;
+		width: 6%;
+	}
+	button {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	button:hover {
+		box-shadow: none;
+	}
+	#site-navigation.toggled {
+		height: auto;
+	}
+	.main-navigation.toggled li {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		width: 100%;
+	}
+	.nav-menu li ul {
+		display: none!important;
+	}
+	.main-navigation a {
+		padding-left: 1%;
+		text-align: left;
+		width: 100%;
+	}
+	.main-navigation a:hover {
+		color: #00ccff;
+	}
+	.trigger {
+		position: relative;
+		display: inline-block;
+		height: 3em;
+		width: 3.3em;
+		border-bottom: 0.7em solid #fafafa;
+		border-top: 0.7em solid #fafafa;
+	}
+	.trigger:before {
+		content: "";
+		position: absolute;
+		top: 0.5em;
+		left: 0px;
+		width: 100%;
+		border-top: 0.7em solid #fafafa;
+	}
+	.brand-logo	{
+		width: 35%;
+	}
+	#footer-menu ul {
+		padding-left: 0;
+	}
+	#footer-menu ul li {
+		width: 48%;
+		border: 0.5px solid white;
+	}
+	#footer-menu ul li a {
+		border: 0;
+	}
+	#footer-menu ul li a:hover {
+		color: #00ccff;	
+	}
+	#site-navigation,
+	.flexslider,
+	a.learnmore,
+	a.promoted-title,
+	.slide-txt.
+	.entry-content-featured,
+	.entry-content-featured a,
+	.entry-content-wrap p,
+	a.read-more,
+	h2.entry-title,
+	.entry-content-about a,
+	.entry-content-about p,
+	.entry-content-about img,
+	.brand-logo,
+	#site-navigation.toggled {
 		transition:all .1s linear;
 	}
 }
