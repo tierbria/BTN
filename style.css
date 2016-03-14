@@ -990,6 +990,7 @@ THIS IS THE STUFF I'M ADDING
 }
 .entry-content-wrap p {
 	background-color: white;
+	font-family: "ms serif", times, georgia;
 	font-size: 0.875em;
 	margin-top: 0;
 	padding: 2% 2% 2% 3%;
@@ -1010,7 +1011,7 @@ a.read-more {
 	font-size: 1.25em;
 	padding: 2% 1.5% 2% 1.5%;
 	position: relative;
-	top: 40px;
+	top: 20px;
 }
 a.read-more:hover {
 	background-color: #00ccff;
@@ -1069,7 +1070,7 @@ a.read-more:hover {
 	height: 300px;
 	float: right;
 	margin: 0 10% 5% 5%;
-	width: 305px;
+	width: 310px;
 	border-radius:10px;
 		-webkit-border-radius:150px;
 		-moz-border-radius:150px;
@@ -1087,6 +1088,7 @@ a.read-more:hover {
 	font-family: "ms serif", times, georgia;
 	font-size: 1em;
 	padding-right: 10%;
+	padding-top: 10em;
 }
 .entry-content-about a {
 	background-color: #000d1a;
@@ -1404,7 +1406,7 @@ h2.entry-title {
 /*
 * Lets get responsive
 */
-@media only screen and (min-width: 1265px) {
+@media only screen and (min-width: 1240px) {
 	.entry-content-about img {
 		transition:all 0.1s linear;
 		-webkit-transition: all 0.1s linear;
@@ -1415,7 +1417,7 @@ h2.entry-title {
 }
 @media only screen and (min-width: 1101px) and (max-width: 1240px) {
 	.entry-content-about img{
-		width: 290px;
+		width: 30%;
 	}
 	.entry-content-about img {
 		transition:all .1s linear;
@@ -1442,7 +1444,7 @@ h2.entry-title {
 		font-size: 1.1em;
 	}
 	.entry-content-about img{
-		width: 285px;
+		width: 28%;
 	}
 	#site-navigation,
 	.entry-content-featured,
@@ -1501,7 +1503,7 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 1.125em;
 	}
 	a.read-more {
 		font-size: 1.1em;
@@ -1538,7 +1540,7 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 1.125em;
 	}
 	a.read-more {
 		font-size: 1.1em;
@@ -1575,7 +1577,7 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 1.02em;
 	}
 	a.read-more {
 		font-size: 1.1em;
@@ -1649,11 +1651,11 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 0.875em;
 	}
 	a.read-more {
 		font-size: 1.1em;
-		top: 35px;
+		top: 25px;
 	}
 	h2.entry-title {
 		margin-right: 27%;
@@ -1693,11 +1695,11 @@ h2.entry-title {
 		font-size: 0.9em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 0.875em;
 	}
 	a.read-more {
 		font-size: 1.1em;
-		top: 35px;
+		top: 25px;
 	}
 	h2.entry-title {
 		margin-right: 27%;
@@ -1757,7 +1759,7 @@ h2.entry-title {
 		font-size: 0.9em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 0.875em;
 	}
 	a.read-more {
 		font-size: 1.1em;
@@ -1895,7 +1897,7 @@ h2.entry-title {
 		font-size: 0.85em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	a.read-more {
 		font-size: 1.1em;
@@ -2029,10 +2031,10 @@ h2.entry-title {
 		width: 98%;
 	}
 	.entry-content-featured a {
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 	.entry-content-wrap p {
-		font-size: 1em;
+		font-size: 1.4em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
@@ -2045,10 +2047,10 @@ h2.entry-title {
 		margin-right: 27%;
 	}
 	.entry-content-about a {
-		font-size: 2.4em;
+		font-size: 2.45em;
 	}
 	.entry-content-about p {
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 	.entry-content-about img {
 		display: none;
@@ -2172,7 +2174,7 @@ h2.entry-title {
 		font-size: 1.25em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.89em;
+		font-size: 1.3em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
@@ -2312,7 +2314,7 @@ h2.entry-title {
 		font-size: 1.125em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.8em;
+		font-size: 1.2em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
@@ -2452,7 +2454,7 @@ h2.entry-title {
 		font-size: 1.125em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.75em;
+		font-size: 1.125em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
@@ -2595,7 +2597,7 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.7em;
+		font-size: 1em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
@@ -2742,7 +2744,7 @@ h2.entry-title {
 		font-size: 1em;
 	}
 	.entry-content-wrap p {
-		font-size: 0.8em;
+		font-size: 0.875em;
 		margin-bottom: 8%;
 		padding: 0% 2% 2% 1%;
 	}
