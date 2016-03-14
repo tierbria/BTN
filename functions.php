@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package _s
+ * @package btn
  */
 
-if ( ! function_exists( '_s_setup' ) ) :
+if ( ! function_exists( 'btn_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( '_s_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function _s_setup() {
+function btn_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on _s, use a find and replace
 	 * to change '_s' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( '_s', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'btn', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function _s_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', '_s' ),
+		'primary' => esc_html__( 'Primary', 'btn' ),
 	) );
 
 	//This registers a secondary menu
@@ -85,7 +85,7 @@ function _s_setup() {
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', '_s_setup' );
+add_action( 'after_setup_theme', 'btn_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -94,26 +94,32 @@ add_action( 'after_setup_theme', '_s_setup' );
  *
  * @global int $content_width
  */
-function _s_content_width() {
-	$GLOBALS['content_width'] = apply_filters( '_s_content_width', 640 );
+function btn_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'btn_content_width', 640 );
 }
-add_action( 'after_setup_theme', '_s_content_width', 0 );
+add_action( 'after_setup_theme', 'btn_content_width', 0 );
 
-//Sets the excerpt to show 0 words and only the more button
+/*
+*Adjust the excerpt length to return only 10 words.
+*/
 function excerpt_length($length) {
-	return 0;
+	return 10;
 }
 add_filter('excerpt_length', 'excerpt_length', 999);
 
-//This modified the excerpts read more text
+/*
+*Set the 'Read More' text as 'Learn More'.
+*/
 function excerpt_more($more) {
 	return 'Learn More';
 }
 add_filter('excerpt_more', 'excerpt_more');
 
-//This links the read more to the post
+/*
+*Set up the 'Read More' button so that by clicking it, you are sent to the post.
+*/
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'tbn') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -145,12 +151,14 @@ function _s_scripts() {
 
 	wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	//Enqueue the flexslider js.
 	wp_enqueue_script('flexslider', get_stylesheet_directory_uri() .'/js/jquery.flexslider-min.js',
 		 array(
 		 	'jquery'), 
 		 	'2.0.4',
 		 	true);
 
+	//Enqueue my-scripts to remove conflict.
 	wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() . '/js/scripts.js',
 		array(
 			'jquery'),
@@ -164,7 +172,7 @@ function _s_scripts() {
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
 /*
-*This will register a custom post type
+*Register the custom post type for the slider. This will also add an array of settings to the new custom post type.
 */
 add_action('init','register_my_post_types');
 function register_my_post_types() {
@@ -186,6 +194,7 @@ function register_my_post_types() {
 				),
 			'public' => true,
 			'exclude_from_search' => true,
+			//Enables the post to support a title, thumbnail and editor.
 			'supports' => array(
 				'title',
 				'thumbnail',

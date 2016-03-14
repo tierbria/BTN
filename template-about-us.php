@@ -2,7 +2,7 @@
 /**
 *Template Name: About Us
 *
-* @package _s
+* @package btn
 */
 
 get_header(); ?>
@@ -18,9 +18,17 @@ get_header(); ?>
 			?>
 
 			<div class="entry-content-about">
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-					<?php the_post_thumbnail(); ?>
-					<?php the_content();?>
+					<?php 
+					//Gets the page title
+					the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<?php 
+					//Gets the page thumbnail
+					the_post_thumbnail(); 
+					?>
+					<?php 
+					//Gets the page content
+					the_content();
+					?>
 			</div>
 
 			<?php

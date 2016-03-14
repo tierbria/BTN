@@ -2,7 +2,7 @@
 /**
 *Template Name: Home Page
 *
-* @package _s
+* @package btn
 */
 
 get_header(); ?>
@@ -10,11 +10,14 @@ get_header(); ?>
 		<div class="flexslider">
 
 			<?php
-
+			//Alter the original query
 			query_posts(
 				array(
+					//An array that keys the query to the below tags.
 					'post_type' => 'slides',
+					//Allows only 4 'slide' custom posts to display.
 					'posts_per_page' => '4',
+					//Displays the 'slides' custom posts in a random order.
 					'byorder' => 'rand'));
 
 			?>
@@ -28,10 +31,15 @@ get_header(); ?>
 					<ul class="slides">
 					    <li>
 					    	<div class="slide-thumbnail">
-					      		<?php the_post_thumbnail(); ?>
+					      		<?php 
+					      		//Displays the post thumbnail.
+					      		the_post_thumbnail(); 
+					      		?>
 					      	</div>
 					      	<div class="slide-txt">
+					      		<!-- Displays the title of the custom 'slides' post and links the title to the rest of the content.-->
 					      		<a href="<?php the_permalink(); ?>" class="promoted-title"><?php the_title(); ?> </a>
+					      		<!-- Creates the slide's 'Find Out More' text and links the text to the rest of the content.-->
 								<a href="<?php the_permalink(); ?>" class="learnmore">Find Out More</a>
 					      	</div>
 					    </li>
@@ -50,10 +58,12 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 		<?php
-			//This code sets the category and number of posts to display on the page.
+			//Set the category and number of posts to display on the page.
 			$args = array (
 				'cat' => 'promoted',
+				//Display only 6 posts per page.
 				'posts_per_page' => 6, 
+				//Display posts in the 'Promoted' Category in ascending order.
 				'byorder' => 'ASC'
 			);
 			query_posts($args)
@@ -65,10 +75,18 @@ get_header(); ?>
 			?>
 
 			<div class="entry-content-featured">
-					<?php the_post_thumbnail(); ?>
+					<?php 
+					//Displays the post thumbnail.
+					the_post_thumbnail(); 
+					?>
 					<div class="entry-content-wrap">
-						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>			
-						<?php the_excerpt();?>
+						<?php 
+						//Gets the post's title and lets you click on it to hypelink to content.
+						the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>	
+						<?php 
+						//Gets an excerpt of the post.
+						the_excerpt();
+						?>
 					</div>
 			</div>
 
