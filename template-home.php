@@ -14,7 +14,7 @@ get_header(); ?>
 			query_posts(
 				array(
 					'post_type' => 'slides',
-					'posts_per_page' => 4,
+					'posts_per_page' => 'promoted',
 					'byorder' => 'rand'));
 
 			?>
