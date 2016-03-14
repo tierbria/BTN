@@ -1,24 +1,11 @@
 /*
-Theme Name: _s
+Theme Name: Business Technology Network
 Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: _s
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-_s is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
+Author: Briac Tier and Naima Nadeem
+Author URI: https://www.linkedin.com/in/briactier
+Description: A WordPress theme that we have created for our fictitious client, BTN (The Business Technology Network), using the Underscores themes as a starting point. The theme should follow the WordPress Theme Development Standards and include all the relevant files.
+Version: 2.0.0
+Text Domain: BTN;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -1030,11 +1017,12 @@ a.read-more:hover {
 /*Stuff for the footer*/
 .site-footer {
 	background-color: #000d1a;
-	color: white;
+	color: #fafafa;
 	margin-top: 2%;
 	padding: 1% 0 1% 0;
 }
 .site-info {
+	font-size: 0.875em;
 	text-align: center;
 }
 #footer-menu ul {
@@ -1048,11 +1036,14 @@ a.read-more:hover {
 }
 .foot-menu a {
 	border-right: 2px solid #fafafa;
-	color: white;
+	color: #fafafa;
 	font-size: 1em;
 	line-height: 1.5em;
 	padding: 0 0.5em 0 0.5em;
 	text-decoration: none;
+}
+.foot-menu a:hover {
+	color: #00ccff;
 }
 .site-info a {
 	color: white;
@@ -1409,7 +1400,11 @@ h2.entry-title {
 		right: 115px;
 	}
 	.entry-content-about img {
-		transition:all .1s linear;
+		transition:all 0.1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}	
 }
 @media only screen and (min-width: 1101px) and (max-width: 1240px) {
@@ -1418,6 +1413,10 @@ h2.entry-title {
 	}
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 1091px) and (max-width: 1100px) {
@@ -1447,6 +1446,10 @@ h2.entry-title {
 	a.read-more,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 1040px) and (max-width: 1090px) {
@@ -1476,6 +1479,10 @@ h2.entry-title {
 	a.read-more,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 980px) and (max-width: 1039px) {
@@ -1511,6 +1518,10 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 960px) and (max-width: 979px) {
@@ -1546,6 +1557,10 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 858px) and (max-width: 959px) {
@@ -1581,6 +1596,10 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 780px) and (max-width: 857px) {
@@ -1616,6 +1635,10 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 820px) and (max-width: 857px) {
@@ -1651,6 +1674,10 @@ h2.entry-title {
 	h2.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 780px) and (max-width: 819px) {
@@ -1702,6 +1729,10 @@ h2.entry-title {
 	.entry-content-about p,
 	.entry-content-about img {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 732px) and (max-width: 779px) {
@@ -1837,6 +1868,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 680px) and (max-width: 731px) {
@@ -1971,6 +2006,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 630px) and (max-width: 679px) {
@@ -2107,6 +2146,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 570px) and (max-width: 629px) {
@@ -2243,6 +2286,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 510px) and (max-width: 569px) {
@@ -2379,6 +2426,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 509px) {
@@ -2515,6 +2566,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 450px) and (max-width: 479px) {
@@ -2658,6 +2713,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (min-width: 380px) and (max-width: 449px) {
@@ -2805,6 +2864,10 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }
 @media only screen and (max-width: 379px) {
@@ -2952,5 +3015,9 @@ h2.entry-title {
 	.brand-logo,
 	#site-navigation.toggled {
 		transition:all .1s linear;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
 	}
 }

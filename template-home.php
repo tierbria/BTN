@@ -2,7 +2,7 @@
 /**
 *Template Name: Home Page
 *
-*@package Fluffy
+* @package _s
 */
 
 get_header(); ?>
