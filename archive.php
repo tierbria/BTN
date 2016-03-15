@@ -30,12 +30,13 @@ get_header(); ?>
 					the_post_thumbnail(); 
 					?>
 					<div class="entry-content-wrap">
+			      		<!-- Displays the title of the post and links to the rest of the content.-->
 					    <a href="<?php the_permalink(); ?>" class="promoted-title"><?php the_title(); ?> </a>
-					      		<!-- Creates the slide's 'Find Out More' text and links the text to the rest of the content.-->
 						<?php 
 						//Gets an excerpt of the post.
 						the_excerpt();
 						?>
+						<!-- Creates the 'Find Out More' text and links to the rest of the content.-->
 						<a href="<?php the_permalink(); ?>" class="learnmore">Find Out More</a>	
 
 					</div>

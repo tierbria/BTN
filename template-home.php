@@ -60,7 +60,7 @@ get_header(); ?>
 		<?php
 			//Set the category and number of posts to display on the page.
 			$args = array (
-				'cat' => 'promoted',
+				'cat' => '8',
 				//Display only 6 posts per page.
 				'posts_per_page' => 6, 
 				//Display posts in the 'Promoted' Category in ascending order.
@@ -80,13 +80,14 @@ get_header(); ?>
 					the_post_thumbnail(); 
 					?>
 					<div class="entry-content-wrap">
-						<?php 
-						//Gets the post's title and lets you click on it to hypelink to content.
-						the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>	
+			      		<!-- Displays the title of the post and links to the rest of the content.-->
+					    <a href="<?php the_permalink(); ?>" class="promoted-title"><?php the_title(); ?> </a>
 						<?php 
 						//Gets an excerpt of the post.
 						the_excerpt();
 						?>
+						<!-- Creates the 'Find Out More' text and links to the rest of the content.-->
+						<a href="<?php the_permalink(); ?>" class="learnmore">Find Out More</a>	
 					</div>
 			</div>
 
