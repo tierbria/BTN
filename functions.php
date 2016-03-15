@@ -119,7 +119,7 @@ add_filter('excerpt_more', 'excerpt_more');
 *Set up the 'Read More' button so that by clicking it, you are sent to the post.
 */
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'tbn') . '</a>';
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('', 'tbn') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -203,6 +203,9 @@ function register_my_post_types() {
 			)
 		);
 }
+
+
+require get_template_directory() .'/options/options.php';
 
 /**
  * Implement the Custom Header feature.
