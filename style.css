@@ -1360,28 +1360,31 @@ h2.widget-title {
 .post-thumbnail {
 	height: 16em;
 	margin-right: 1%;
-	-webkit-box-shadow: 10px 10px 25px #000d1a;
+	box-shadow: 2px 2px 25px #000d1a;
+		-webkit-box-shadow: 10px 10px 25px #000d1a;
+		-moz-box-shadow: 10px 10px 25px #000d1a;
+		-o-box-shadow: 10px 10px 25px #000d1a;
+		-ms-box-shadow: 10px 10px 25px #000d1a;
 }
 .post-thumbnail img {
 	width: 100%;
 }
 h1.entry-title {
-	background-color: #fafafa;
-	font-size: 5em;
-	margin-left: 3%;
-	opacity: 0.875;
-	position: absolute;
-	bottom: 4.25em;
-	width: 75%;
+	background-color: #000d1a;
+	height: auto;
+	margin-left: 4%;
+	text-align: center;
+	width: 90%;
 }
 h1.entry-title a {
-	color: #000d1a;
+	color: #fafafa;
 	font-family: "helvetica", arial, verdana, sans-serif;
+	font-size: 200%;
 	margin: 1% 1% 1% 2%;
 	text-decoration: none;
 }
 .post-txt {
-	padding: 10% 6% 1% 5%;
+	padding: 5% 6% 1% 5%;
 }
 .post-txt p {
 	font-family: "ms serif", times, georgia;
@@ -1732,17 +1735,12 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
-	h1.entry-title {
-		font-size: 4em;
-		bottom: 6em;
-	}
 	#site-navigation,
 	.entry-content-featured,
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
 		-webkit-transition: all 0.1s linear;
@@ -1787,10 +1785,6 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
-	h1.entry-title {
-		font-size: 4em;
-		bottom: 6em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title, 
@@ -1799,7 +1793,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img {
@@ -1927,10 +1920,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 4em;
-		bottom: 6em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1940,7 +1929,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2069,10 +2057,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 4em;
-		bottom: 6em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2082,7 +2066,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2214,10 +2197,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 4em;
-		bottom: 6em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2227,7 +2206,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2359,10 +2337,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 3.5em;
-		bottom: 7em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2372,7 +2346,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2504,10 +2477,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 3.5em;
-		bottom: 7em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2517,7 +2486,6 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
-	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2649,10 +2617,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 3.5em;
-		bottom: 7em;
-	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2661,7 +2625,6 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
-	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -2800,10 +2763,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 2em;
-		bottom: 13.5em;
-	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2813,7 +2772,6 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
-	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -2956,10 +2914,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 2em;
-		bottom: 13.5em;
-	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2969,7 +2923,6 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
-	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -3112,10 +3065,6 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
-	h1.entry-title {
-		font-size: 2em;
-		bottom: 13.5em;
-	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -3125,7 +3074,6 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
-	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
