@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _s
+ * @package btn
  */
 
 ?><!DOCTYPE html>
@@ -31,11 +31,12 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="brand-logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="https://phoenix.sheridanc.on.ca/~ccit3473/wp-content/themes/BTN-master/img/logo.png" alt="signature" /></a>
 				<?php
 				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel=""></a></h1>
 				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel=""></a></p>
 				<?php
 				endif;
 

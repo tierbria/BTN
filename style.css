@@ -2,7 +2,7 @@
 Theme Name: Business Technology Network
 Theme URI: http://underscores.me/
 Author: Briac Tier and Naima Nadeem
-Author URI: https://www.linkedin.com/in/briactier
+Author URI: https://login.sheridanc.on.ca
 Description: A WordPress theme that we have created for our fictitious client, BTN (The Business Technology Network), using the Underscores themes as a starting point. The theme should follow the WordPress Theme Development Standards and include all the relevant files.
 Version: 2.0.0
 Text Domain: BTN;
@@ -394,7 +394,7 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
+	height: 100%; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
 
@@ -940,7 +940,7 @@ THIS IS THE STUFF I'M ADDING
 .brand-logo {
 	background-color: white;
 	float: left;
-	height: 60px;
+	height: 0px;
 	margin: 0.5% 0 0.5% 0.5%;
 	width: 10%;
 }
@@ -1016,6 +1016,20 @@ a.read-more {
 a.read-more:hover {
 	background-color: #00ccff;
 	color: white;	
+}
+/*Stuff for the widget area*/
+.widget-area {
+	padding: 0 5% 0 5%;
+}
+.widget-area ul {
+	padding-left: 1%;
+}
+h2.widget-title {
+	font-family: "ms serif", times, georgia;
+	padding-top: 3%;
+}
+.widget-title ul li a {
+	font-family: "helvetica", arial, verdana, sans-serif;
 }
 /*Stuff for the footer*/
 .site-footer {
@@ -1605,6 +1619,9 @@ h2.entry-title {
 @media only screen and (min-width: 780px) and (max-width: 857px) {
 	#site-navigation {
 		height: 70px;
+	}
+	.brand-logo {
+		height: 3em;
 	}
 	.entry-content-featured {
 		height: 475px;
