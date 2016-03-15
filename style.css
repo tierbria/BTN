@@ -1314,7 +1314,7 @@ h2.widget-title {
 }
 
 /*--------------------------------------------------------------
-# About Us - Custom Page
+# Custom Page
 --------------------------------------------------------------*/
 .entry-content-about {
 	padding-top: 5%;
@@ -1352,6 +1352,41 @@ h2.widget-title {
 	font-size: 3em;
 	padding: 1% 10% 1% 2%;
 	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+.post-thumbnail {
+	height: 16em;
+	margin-right: 1%;
+	-webkit-box-shadow: 10px 10px 25px #000d1a;
+}
+.post-thumbnail img {
+	width: 100%;
+}
+h1.entry-title {
+	background-color: #fafafa;
+	font-size: 5em;
+	margin-left: 3%;
+	opacity: 0.875;
+	position: absolute;
+	bottom: 4.25em;
+	width: 75%;
+}
+h1.entry-title a {
+	color: #000d1a;
+	font-family: "helvetica", arial, verdana, sans-serif;
+	margin: 1% 1% 1% 2%;
+	text-decoration: none;
+}
+.post-txt {
+	padding: 10% 6% 1% 5%;
+}
+.post-txt p {
+	font-family: "ms serif", times, georgia;
+	font-size: 1em;
+	line-height: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -1540,7 +1575,7 @@ h2.entry-title {
 		font-size: 1.1em;
 	}
 	h2.entry-title {
-		margin-right: 30%;
+		margin-right: 32%;
 	}
 	.entry-content-about img {
 		display: none;
@@ -1577,7 +1612,7 @@ h2.entry-title {
 		font-size: 1.1em;
 	}
 	h2.entry-title {
-		margin-right: 30%;
+		margin-right: 32%;
 	}
 	.entry-content-about img {
 		display: none;
@@ -1614,7 +1649,7 @@ h2.entry-title {
 		font-size: 1.1em;
 	}
 	h2.entry-title {
-		margin-right: 30%;
+		margin-right: 31%;
 	}
 	.entry-content-about img {
 		display: none;
@@ -1692,10 +1727,14 @@ h2.entry-title {
 		top: 25px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 31%;
 	}
 	.entry-content-about img {
 		display: none;
+	}
+	h1.entry-title {
+		font-size: 4em;
+		bottom: 6em;
 	}
 	#site-navigation,
 	.entry-content-featured,
@@ -1703,6 +1742,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about img {
 		transition:all .1s linear;
 		-webkit-transition: all 0.1s linear;
@@ -1736,7 +1776,7 @@ h2.entry-title {
 		top: 25px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 31%;
 	}
 	.entry-content-about a {
 		font-size: 2.75em;
@@ -1747,6 +1787,10 @@ h2.entry-title {
 	.entry-content-about img {
 		display: none;
 	}
+	h1.entry-title {
+		font-size: 4em;
+		bottom: 6em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title, 
@@ -1755,6 +1799,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img {
@@ -1800,7 +1845,7 @@ h2.entry-title {
 		top: 35px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 30%;
 	}
 	.entry-content-about a {
 		font-size: 2.75em;
@@ -1882,6 +1927,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 4em;
+		bottom: 6em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -1891,6 +1940,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -1938,7 +1988,7 @@ h2.entry-title {
 		top: 35px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 30%;
 	}
 	.entry-content-about a {
 		font-size: 2.65em;
@@ -2019,6 +2069,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 4em;
+		bottom: 6em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2028,6 +2082,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2078,7 +2133,7 @@ h2.entry-title {
 		top: 25px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 30%;
 	}
 	.entry-content-about a {
 		font-size: 2.45em;
@@ -2159,6 +2214,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 4em;
+		bottom: 6em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2168,6 +2227,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2218,7 +2278,7 @@ h2.entry-title {
 		top: 25px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 30%;
 	}
 	.entry-content-about a {
 		font-size: 2em;
@@ -2299,6 +2359,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 3.5em;
+		bottom: 7em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2308,6 +2372,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2358,7 +2423,7 @@ h2.entry-title {
 		top: 20px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 30%;
 	}
 	.entry-content-about a {
 		font-size: 1.9em;
@@ -2439,6 +2504,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 3.5em;
+		bottom: 7em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2448,6 +2517,7 @@ h2.entry-title {
 	.entry-content-wrap p,
 	a.read-more,
 	h2.entry-title,
+	h1.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
 	.entry-content-about img,
@@ -2498,7 +2568,7 @@ h2.entry-title {
 		top: 20px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 29%;
 	}
 	.entry-content-about a {
 		font-size: 1.85em;
@@ -2579,6 +2649,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 3.5em;
+		bottom: 7em;
+	}
 	#site-navigation,
 	a.learnmore,
 	a.promoted-title,
@@ -2587,6 +2661,7 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
+	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -2641,7 +2716,7 @@ h2.entry-title {
 		top: 20px;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 29%;
 	}
 	.entry-content-about a {
 		font-size: 2em;
@@ -2725,6 +2800,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 2em;
+		bottom: 13.5em;
+	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2734,6 +2813,7 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
+	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -2795,7 +2875,7 @@ h2.entry-title {
 		text-decoration: underline;
 	}
 	h2.entry-title {
-		margin-right: 27%;
+		margin-right: 28%;
 	}
 	.entry-content-about a {
 		font-size: 1.5em;
@@ -2876,6 +2956,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 2em;
+		bottom: 13.5em;
+	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -2885,6 +2969,7 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
+	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,
@@ -3027,6 +3112,10 @@ h2.entry-title {
 	#footer-menu ul li a:hover {
 		color: #00ccff;	
 	}
+	h1.entry-title {
+		font-size: 2em;
+		bottom: 13.5em;
+	}
 	#site-navigation,
 	.flexslider,
 	a.learnmore,
@@ -3036,6 +3125,7 @@ h2.entry-title {
 	.entry-content-featured a,
 	.entry-content-wrap p,
 	a.read-more,
+	h1.entry-title,
 	h2.entry-title,
 	.entry-content-about a,
 	.entry-content-about p,

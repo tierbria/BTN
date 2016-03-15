@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package _s
+ * @package btn
  */
 
 get_header(); ?>
@@ -14,11 +14,27 @@ get_header(); ?>
 
 		<?php
 		while ( have_posts() ) : the_post();
+		?>
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			<div class="post-content">
+				<div class="post-thumbnail">
+					<?php 
+					//Gets the page thumbnail
+					the_post_thumbnail(); 
+					?>
+				</div>
+				<?php 
+				//Gets the page title
+				the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); 
+				?>
+				<div class="post-txt">
+					<?php 
+					//Gets the page content
+					the_content();
+					?>
+				</div>
 
-			the_post_navigation();
-
+		<?php
 		endwhile; // End of the loop.
 		?>
 
