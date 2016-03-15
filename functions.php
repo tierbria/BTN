@@ -205,7 +205,7 @@ function register_my_post_types() {
 }
 
 
-require get_template_directory() .'/options/options.php';
+require get_stylesheet_directory() .'/options/options.php';
 
 /**
  * Implement the Custom Header feature.
