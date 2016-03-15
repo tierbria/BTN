@@ -1203,8 +1203,9 @@ object {
 		-o-box-shadow:2px 2px 25px #000d1a;
 		-ms-box-shadow:2px 2px 25px #000d1a;
 	float: left;
-	height: 525px;
+	height: 450px;
 	margin: 0 1% 1% 0;
+	padding-bottom: 2%;
 	width: 32%;
 }
 .entry-content-featured img {
@@ -1226,29 +1227,15 @@ object {
 	font-family: "ms serif", times, georgia;
 	font-size: 0.875em;
 	margin-top: 0;
-	padding: 2% 2% 2% 3%;
+	padding: 2% 2% 0% 3%;
 	width: 99%;
 }
 .entry-content-featured a {
 	color: #00ccff;
 	font-family: "ms serif", times, georgia;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	text-decoration: none;
 	text-transform: uppercase;
-}
-a.read-more {
-	background-color: #000d1a;
-	border: 1px solid #000d1a;
-	color: #fafafa;
-	font-family: "helvetica", arial, verdana, sans-serif;
-	font-size: 1.25em;
-	padding: 2% 1.5% 2% 1.5%;
-	position: relative;
-	top: 20px;
-}
-a.read-more:hover {
-	background-color: #00ccff;
-	color: white;	
 }
 /*--------------------------------------------------------------
 # Sidebar Widget
@@ -1384,7 +1371,7 @@ h1.entry-title a {
 	text-decoration: none;
 }
 .post-txt {
-	padding: 5% 6% 1% 5%;
+	padding: 3% 6% 1% 5%;
 }
 .post-txt p {
 	font-family: "ms serif", times, georgia;
